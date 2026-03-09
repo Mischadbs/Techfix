@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Build TF-001</title>
+  <meta name="description" content="Proof Build TF-001 met benchmarks, thermals en stabiliteitstests." />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            techfix: "#58C11D"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+<body class="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+  <div class="pointer-events-none absolute inset-0 overflow-hidden">
+    <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
+    <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
+  </div>
+  
+<header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+    <a href="../../index.html" class="flex items-center gap-3">
+      <img src="../../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto" />
+    </a>
+    <nav class="hidden items-center gap-8 md:flex">
+      <a data-nav href="../../index.html" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
+      <a data-nav href="../../performance-lab/index.html" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
+      <a data-nav href="../../builds/index.html" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
+      <a data-nav href="../../knowledge/index.html" class="text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
+      <a data-nav href="../../custom-build/index.html" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
+    </nav>
+    <a href="../../custom-build/index.html" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 hover:opacity-90">Start jouw build</a>
+  </div>
+</header>
+
+  <main>
+<section class="mx-auto max-w-7xl px-6 pt-20 pb-10">
+  <div class="max-w-4xl">
+    <div class="text-sm uppercase tracking-[0.3em] text-techfix">Proof Build</div>
+    <h1 class="mt-4 text-4xl md:text-5xl font-semibold tracking-tight text-white">Techfix Build TF-001</h1>
+    <p class="mt-6 text-lg text-zinc-300">Iedere build is uiteindelijk een technische case study. Deze build laat zien hoe prestaties, thermiek en stabiliteit samenkomen in één geoptimaliseerd systeem.</p>
+  </div>
+</section>
+<section class="mx-auto max-w-7xl px-6 py-10">
+  <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+    <div class="space-y-8">
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Use case</h2><p class="mt-3 leading-7 text-zinc-300">High-end 4K gaming gecombineerd met Blender rendering en video editing workloads.</p></div>
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Hardware configuratie</h2><ul class="mt-4 space-y-2 text-zinc-300"><li>CPU: Ryzen 9 7950X</li><li>GPU: NVIDIA RTX 4090</li><li>RAM: 64GB DDR5</li><li>Storage: 2TB NVMe Gen4</li><li>Cooling: High-airflow optimized setup</li></ul></div>
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Benchmark resultaten</h2><div class="mt-4 space-y-3 text-zinc-300"><div class="flex justify-between gap-4"><span>Cinebench R23</span><span class="text-techfix">38500</span></div><div class="flex justify-between gap-4"><span>3DMark Time Spy</span><span class="text-techfix">35500</span></div><div class="flex justify-between gap-4"><span>Blender Benchmark</span><span class="text-techfix">28 sec</span></div></div></div>
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Thermische analyse</h2><div class="mt-4 space-y-3 text-zinc-300"><div class="flex justify-between gap-4"><span>GPU max load</span><span class="text-techfix">67°C</span></div><div class="flex justify-between gap-4"><span>CPU max load</span><span class="text-techfix">78°C</span></div><div class="flex justify-between gap-4"><span>Noise level</span><span class="text-techfix">34 dB</span></div></div></div>
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Stability test</h2><p class="mt-3 text-zinc-300">Prime95 + Furmark gecombineerde loadtest gedurende <span class="text-techfix">24 uur stabiel</span>.</p></div>
+    </div>
+    <div class="space-y-6">
+      <div class="overflow-hidden rounded-[2rem] border border-white/10"><img src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=1600&q=80" alt="Techfix proof build" class="h-full w-full object-cover" /></div>
+      <div class="rounded-[2rem] border border-techfix/20 bg-techfix/10 p-8"><h2 class="text-xl font-semibold text-white">Optimalisaties</h2><ul class="mt-4 space-y-2 text-zinc-200"><li>CPU undervolt tuning</li><li>Custom fan curve optimalisatie</li><li>Airflow analyse en aanpassing</li><li>GPU efficiency tuning</li></ul></div>
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8"><h2 class="text-xl font-semibold text-white">Resultaat</h2><div class="mt-4 space-y-2 text-zinc-300"><div class="flex justify-between gap-4"><span>Performance winst</span><span class="text-techfix">+11%</span></div><div class="flex justify-between gap-4"><span>Lagere temperatuur</span><span class="text-techfix">-9°C</span></div><div class="flex justify-between gap-4"><span>Geluid reductie</span><span class="text-techfix">-8 dB</span></div></div></div>
+      <a href="../../custom-build/index.html" class="block rounded-2xl bg-techfix px-6 py-4 text-center text-sm font-semibold text-zinc-950 hover:opacity-90">Vraag een vergelijkbare build aan</a>
+    </div>
+  </div>
+</section>
+</main>
+  
+<footer class="border-t border-white/10">
+  <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-zinc-400 md:flex-row md:items-center md:justify-between lg:px-8">
+    <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor custom pc's</div>
+    <div class="flex gap-6">
+      <a href="../../performance-lab/index.html" class="transition hover:text-techfix">Performance Lab</a>
+      <a href="../../builds/index.html" class="transition hover:text-techfix">Builds</a>
+      <a href="../../knowledge/index.html" class="transition hover:text-techfix">Knowledge</a>
+      <a href="../../custom-build/index.html" class="transition hover:text-techfix">Custom Build</a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../../assets/app.js"></script>
+</body>
+</html>
