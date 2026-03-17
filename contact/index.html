@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Contact</title>
+  <meta name="description" content="Neem contact op met Techfix." />
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            techfix: "#58C11D"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-zinc-100">
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+    <a href="../index.html">
+      <img src="../assets/logo-light.png" class="h-9" />
+    </a>
+
+    <nav class="hidden md:flex gap-6 text-sm text-zinc-300">
+      <a href="../index.html" class="hover:text-techfix">Home</a>
+      <a href="../performance-lab/index.html" class="hover:text-techfix">Performance Lab</a>
+      <a href="../builds/index.html" class="hover:text-techfix">Builds</a>
+      <a href="../knowledge/index.html" class="hover:text-techfix">Knowledge</a>
+      <a href="../custom-build/index.html" class="hover:text-techfix">Custom Build</a>
+      <a href="../contact/index.html" class="text-techfix">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="mx-auto max-w-6xl px-5 py-20">
+
+  <div class="max-w-3xl">
+    <div class="text-sm uppercase tracking-widest text-techfix">Contact</div>
+    <h1 class="mt-4 text-4xl font-semibold">Neem contact op</h1>
+
+    <p class="mt-6 text-zinc-300">
+      Heb je vragen over een build, prestaties of wil je sparren over een systeem?
+      Neem gerust contact op. Je krijgt altijd een inhoudelijk antwoord.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-10 mt-16">
+
+    <!-- CONTACT INFO -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+      <h2 class="text-xl font-semibold">Contactgegevens</h2>
+
+      <div class="mt-6 space-y-4 text-zinc-300">
+        <p>
+          <span class="text-zinc-400 text-sm">E-mail</span><br>
+          <a href="mailto:info@techfix.nl" class="text-techfix hover:underline">
+            info@techfix.nl
+          </a>
+        </p>
+
+        <p class="text-sm text-zinc-400">
+          Reactietijd meestal binnen 24 uur.
+        </p>
+      </div>
+    </div>
+
+    <!-- EXTRA BLOK -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8">
+      <h2 class="text-xl font-semibold">Wanneer neem je contact op?</h2>
+
+      <ul class="mt-6 space-y-3 text-zinc-300">
+        <li>• Advies over hardware keuzes</li>
+        <li>• Performance vragen</li>
+        <li>• AI / workstation builds</li>
+        <li>• Custom build aanvragen</li>
+      </ul>
+
+      <a href="../custom-build/index.html"
+         class="inline-block mt-8 bg-techfix px-6 py-3 rounded-xl font-semibold text-zinc-950 hover:opacity-90">
+        Start jouw build
+      </a>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="border-t border-white/10 mt-20">
+  <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400 flex justify-between">
+    <div>Techfix — Performance engineering</div>
+  </div>
+</footer>
+
+</body>
+</html>
