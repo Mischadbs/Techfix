@@ -7,9 +7,11 @@
   <meta name="description" content="Vraag jouw Techfix custom build aan." />
   <link rel="canonical" href="https://techfix.nl/custom-build/" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,191 +24,208 @@
       }
     }
   </script>
+
   <link rel="stylesheet" href="../assets/styles.css" />
+
+  <style>
+    html, body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
-  <div class="pointer-events-none absolute inset-0 overflow-hidden">
+<body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+
+  <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
     <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
     <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
   </div>
-  
-<header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
-    <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
-      <img src="../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
-    </a>
-    <nav class="hidden items-center gap-7 md:flex">
-      <a data-nav href="/" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
-      <a data-nav href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
-      <a data-nav href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
-      <a data-nav href="/knowledge/" class="text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
-      <a data-nav href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
-      <a data-nav href="/contact/" class="text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
-    </nav>
-    <a href="/custom-build/" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">Start jouw build</a>
-  </div>
-</header>
 
-<main>
-<section class="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:pt-20 lg:px-6">
-  <div class="max-w-4xl">
-    <div class="text-sm uppercase tracking-[0.3em] text-techfix">Custom Build</div>
-    <h1 class="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl">Start jouw Techfix build</h1>
-    <p class="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
-      Vertel waarvoor het systeem bedoeld is, wat jouw prioriteiten zijn en welk prestatieniveau je zoekt. Op basis daarvan kan Techfix een passende buildrichting uitwerken.
-    </p>
-  </div>
-</section>
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
+      <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
+        <img src="../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
+      </a>
 
-<section class="mx-auto max-w-6xl px-5 py-10 lg:px-6 lg:py-12">
-  <div class="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-    <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
-      <div class="text-sm uppercase tracking-[0.3em] text-techfix">Wat gebeurt er daarna?</div>
-      <ol class="mt-6 space-y-3 text-zinc-300">
-        <li>1) Intake en korte afstemming</li>
-        <li>2) Hardware voorstel + planning</li>
-        <li>3) Build, tuning en validatie</li>
-        <li>4) Oplevering met rapportage</li>
-      </ol>
-      <p class="mt-6 text-sm leading-7 text-zinc-400">
-        Hoe specifieker jouw use case, hoe beter Techfix kan adviseren. Denk aan software, resolutie, games, AI taken of geluidsvoorkeur.
-      </p>
+      <nav class="hidden items-center gap-7 md:flex">
+        <a data-nav href="/" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
+        <a data-nav href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
+        <a data-nav href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
+        <a data-nav href="/knowledge/" class="text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
+        <a data-nav href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
+        <a data-nav href="/contact/" class="text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
+      </nav>
+
+      <a href="/custom-build/" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
+        Start jouw build
+      </a>
     </div>
+  </header>
 
-    <form id="build-form" action="https://formspree.io/f/xaqppbyb" method="POST" class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
-      <input type="hidden" name="_subject" value="Nieuwe Techfix build aanvraag" />
-      <input type="hidden" name="_captcha" value="true" />
-      <input type="hidden" name="page" value="Techfix Custom Build formulier" />
-      <input type="hidden" name="form_time" id="form_time" />
-
-      <div class="hidden" aria-hidden="true">
-        <label for="_gotcha">Laat dit veld leeg</label>
-        <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
-      </div>
-
-      <div class="grid gap-5 md:grid-cols-2">
-        <label class="block" for="name">
-          <span class="mb-2 block text-sm text-zinc-300">Naam</span>
-          <input
-            id="name"
-            name="name"
-            required
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
-            placeholder="Jouw naam"
-          />
-        </label>
-
-        <label class="block" for="email">
-          <span class="mb-2 block text-sm text-zinc-300">E-mail</span>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
-            placeholder="naam@email.nl"
-          />
-        </label>
-
-        <label class="block md:col-span-2" for="primary_use">
-          <span class="mb-2 block text-sm text-zinc-300">Primair gebruik</span>
-          <select
-            id="primary_use"
-            name="primary_use"
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
-          >
-            <option>Gaming</option>
-            <option>Video editing</option>
-            <option>3D / rendering</option>
-            <option>AI / compute</option>
-            <option>Gemengd gebruik</option>
-          </select>
-        </label>
-
-        <label class="block" for="budget">
-          <span class="mb-2 block text-sm text-zinc-300">Budgetindicatie</span>
-          <input
-            id="budget"
-            name="budget"
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
-            placeholder="Bijv. €3000–€5000"
-          />
-        </label>
-
-        <label class="block" for="preference">
-          <span class="mb-2 block text-sm text-zinc-300">Voorkeur</span>
-          <select
-            id="preference"
-            name="preference"
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
-          >
-            <option>Maximale performance</option>
-            <option>Gebalanceerd</option>
-            <option>Zo stil mogelijk</option>
-          </select>
-        </label>
-
-        <label class="block md:col-span-2" for="tuning">
-          <span class="mb-2 block text-sm text-zinc-300">Overclocking / tuning</span>
-          <select
-            id="tuning"
-            name="tuning"
-            class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
-          >
-            <option>Ja, waar zinvol</option>
-            <option>Alleen als stabiliteit voorop blijft staan</option>
-            <option>Nee, liever stock / conservatief</option>
-          </select>
-        </label>
-
-        <label class="block md:col-span-2" for="notes">
-          <span class="mb-2 block text-sm text-zinc-300">Extra wensen</span>
-          <textarea
-            id="notes"
-            name="notes"
-            class="min-h-[140px] w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
-            placeholder="Omschrijf jouw use case, software, games, resolutie, gewenste GPU/CPU of andere voorkeuren."
-          ></textarea>
-        </label>
-      </div>
-
-      <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <p class="max-w-xl text-sm leading-6 text-zinc-400">
-          Dit formulier is bedoeld als eerste intake. Na de aanvraag volgt afstemming over wensen, haalbaarheid en planning.
+  <main>
+    <section class="mx-auto max-w-6xl px-5 pt-16 pb-8 sm:pt-20 lg:px-6 lg:pt-24">
+      <div class="max-w-4xl">
+        <div class="text-sm uppercase tracking-[0.3em] text-techfix">Custom Build</div>
+        <h1
+          class="mt-4 max-w-[13ch] text-[2.4rem] font-semibold leading-[1.03] tracking-[-0.03em] sm:text-[3rem] lg:text-[3.9rem]"
+          style="font-family: 'Space Grotesk', sans-serif;"
+        >
+          Start jouw Techfix build
+        </h1>
+        <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">
+          Vertel waarvoor het systeem bedoeld is, wat jouw prioriteiten zijn en welk prestatieniveau je zoekt. Op basis daarvan kan Techfix een passende buildrichting uitwerken.
         </p>
-        <button type="submit" class="rounded-2xl bg-techfix px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
-          Verstuur aanvraag
-        </button>
       </div>
+    </section>
 
-      <div id="form-status" class="mt-4 hidden rounded-2xl border px-4 py-3 text-sm"></div>
+    <section class="mx-auto max-w-6xl px-5 py-10 lg:px-6 lg:py-12">
+      <div class="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+        <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
+          <div class="text-sm uppercase tracking-[0.3em] text-techfix">Wat gebeurt er daarna?</div>
+          <ol class="mt-6 space-y-3 text-zinc-300">
+            <li>1) Intake en korte afstemming</li>
+            <li>2) Hardware voorstel + planning</li>
+            <li>3) Build, tuning en validatie</li>
+            <li>4) Oplevering met rapportage</li>
+          </ol>
+          <p class="mt-6 text-sm leading-7 text-zinc-400">
+            Hoe specifieker jouw use case, hoe beter Techfix kan adviseren. Denk aan software, resolutie, games, AI taken of geluidsvoorkeur.
+          </p>
+        </div>
 
-      <p class="mt-4 text-xs text-zinc-500">
-        Dit formulier is beschermd tegen spam en geautomatiseerde inzendingen.
-      </p>
-    </form>
-  </div>
-</section>
-</main>
-  
-<footer class="border-t border-white/10">
-  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 text-sm text-zinc-400 md:flex-row md:items-start md:justify-between lg:px-6">
-    <div>
-      <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor custom pc's</div>
-      <div class="mt-3 text-xs text-zinc-500 leading-6">
-        KvK: 57281408<br>
-        BTW: NL155583700B01
+        <form id="build-form" action="https://formspree.io/f/xaqppbyb" method="POST" class="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
+          <input type="hidden" name="_subject" value="Nieuwe Techfix build aanvraag" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="page" value="Techfix Custom Build formulier" />
+          <input type="hidden" name="form_time" id="form_time" />
+
+          <div class="hidden" aria-hidden="true">
+            <label for="_gotcha">Laat dit veld leeg</label>
+            <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2">
+            <label class="block" for="name">
+              <span class="mb-2 block text-sm text-zinc-300">Naam</span>
+              <input
+                id="name"
+                name="name"
+                required
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
+                placeholder="Jouw naam"
+              />
+            </label>
+
+            <label class="block" for="email">
+              <span class="mb-2 block text-sm text-zinc-300">E-mail</span>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
+                placeholder="naam@email.nl"
+              />
+            </label>
+
+            <label class="block md:col-span-2" for="primary_use">
+              <span class="mb-2 block text-sm text-zinc-300">Primair gebruik</span>
+              <select
+                id="primary_use"
+                name="primary_use"
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
+              >
+                <option>Gaming</option>
+                <option>Video editing</option>
+                <option>3D / rendering</option>
+                <option>AI / compute</option>
+                <option>Gemengd gebruik</option>
+              </select>
+            </label>
+
+            <label class="block" for="budget">
+              <span class="mb-2 block text-sm text-zinc-300">Budgetindicatie</span>
+              <input
+                id="budget"
+                name="budget"
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
+                placeholder="Bijv. €3000–€5000"
+              />
+            </label>
+
+            <label class="block" for="preference">
+              <span class="mb-2 block text-sm text-zinc-300">Voorkeur</span>
+              <select
+                id="preference"
+                name="preference"
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
+              >
+                <option>Maximale performance</option>
+                <option>Gebalanceerd</option>
+                <option>Zo stil mogelijk</option>
+              </select>
+            </label>
+
+            <label class="block md:col-span-2" for="tuning">
+              <span class="mb-2 block text-sm text-zinc-300">Overclocking / tuning</span>
+              <select
+                id="tuning"
+                name="tuning"
+                class="w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none focus:border-techfix"
+              >
+                <option>Ja, waar zinvol</option>
+                <option>Alleen als stabiliteit voorop blijft staan</option>
+                <option>Nee, liever stock / conservatief</option>
+              </select>
+            </label>
+
+            <label class="block md:col-span-2" for="notes">
+              <span class="mb-2 block text-sm text-zinc-300">Extra wensen</span>
+              <textarea
+                id="notes"
+                name="notes"
+                class="min-h-[140px] w-full rounded-2xl border border-white/10 bg-zinc-900/80 px-4 py-3 text-white outline-none placeholder:text-zinc-500 focus:border-techfix"
+                placeholder="Omschrijf jouw use case, software, games, resolutie, gewenste GPU/CPU of andere voorkeuren."
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <p class="max-w-xl text-sm leading-6 text-zinc-400">
+              Dit formulier is bedoeld als eerste intake. Na de aanvraag volgt afstemming over wensen, haalbaarheid en planning.
+            </p>
+            <button type="submit" class="rounded-2xl bg-techfix px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
+              Verstuur aanvraag
+            </button>
+          </div>
+
+          <div id="form-status" class="mt-4 hidden rounded-2xl border px-4 py-3 text-sm"></div>
+
+          <p class="mt-4 text-xs text-zinc-500">
+            Dit formulier is beschermd tegen spam en geautomatiseerde inzendingen.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 text-sm text-zinc-400 md:flex-row md:items-start md:justify-between lg:px-6">
+      <div>
+        <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor custom pc's</div>
+        <div class="mt-3 text-xs leading-6 text-zinc-500">
+          KvK: 57281408<br>
+          BTW: NL155583700B01
+        </div>
+      </div>
+      <div class="flex gap-6">
+        <a href="/performance-lab/" class="transition hover:text-techfix">Performance Lab</a>
+        <a href="/builds/" class="transition hover:text-techfix">Builds</a>
+        <a href="/knowledge/" class="transition hover:text-techfix">Knowledge</a>
+        <a href="/custom-build/" class="transition hover:text-techfix">Custom Build</a>
+        <a href="/contact/" class="transition hover:text-techfix">Contact</a>
       </div>
     </div>
-    <div class="flex gap-6">
-      <a href="/performance-lab/" class="transition hover:text-techfix">Performance Lab</a>
-      <a href="/builds/" class="transition hover:text-techfix">Builds</a>
-      <a href="/knowledge/" class="transition hover:text-techfix">Knowledge</a>
-      <a href="/custom-build/" class="transition hover:text-techfix">Custom Build</a>
-      <a href="/contact/" class="transition hover:text-techfix">Contact</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
   <script>
     const form = document.getElementById('build-form');
