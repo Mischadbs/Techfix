@@ -3,13 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PC Knowledge Base | Techfix</title>
-  <meta name="description" content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning en workstation builds. Duidelijke uitleg zonder marketingpraat." />
+
+  <title>PC Kennisbank | Custom PC, Gaming Performance & Tuning | Techfix</title>
+  <meta
+    name="description"
+    content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze. Duidelijke uitleg van Techfix zonder marketingpraat."
+  />
+  <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://techfix.nl/knowledge/" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PC Kennisbank | Custom PC, Gaming Performance & Tuning | Techfix" />
+  <meta
+    property="og:description"
+    content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze."
+  />
+  <meta property="og:url" content="https://techfix.nl/knowledge/" />
+  <meta property="og:site_name" content="Techfix" />
+  <meta property="og:image" content="https://techfix.nl/assets/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PC Kennisbank | Custom PC, Gaming Performance & Tuning | Techfix" />
+  <meta
+    name="twitter:description"
+    content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze."
+  />
+  <meta name="twitter:image" content="https://techfix.nl/assets/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,9 +48,74 @@
       }
     }
   </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Techfix",
+          "url": "https://techfix.nl/",
+          "logo": "https://techfix.nl/assets/logo-light.png"
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Techfix PC Kennisbank",
+          "url": "https://techfix.nl/knowledge/",
+          "description": "Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze.",
+          "inLanguage": "nl-NL"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is een custom pc beter dan een prebuilt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Meestal wel. Je hebt meer controle over componentkwaliteit, airflow, geluidsniveau, voeding en upgradepad. Daardoor krijg je vaak een systeem dat beter in balans is."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Welke GPU heb ik nodig voor 1440p gaming?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dat hangt af van je games, settings en gewenste framerate. Voor high refresh 1440p wil je doorgaans meer dan alleen genoeg rekenkracht, zeker bij moderne AAA-titels."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Heeft undervolting echt nut?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Goed uitgevoerde undervolting kan zorgen voor lagere temperaturen, minder geluid en soms zelfs stabielere prestaties onder langdurige belasting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Kan Techfix helpen als ik nog niet weet wat ik nodig heb?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zeker. Juist dan is een custom build traject nuttig. Op basis van budget, resolutie, software en voorkeuren kan een build veel gerichter worden samengesteld."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+
   <link rel="stylesheet" href="../assets/styles.css" />
+
+  <style>
+    html, body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+<body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
   <div class="pointer-events-none absolute inset-0 overflow-hidden">
     <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
     <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
@@ -36,7 +127,7 @@
       <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
         <img src="../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
       </a>
-      <nav class="hidden items-center gap-7 md:flex">
+      <nav class="hidden items-center gap-7 md:flex" aria-label="Hoofdnavigatie">
         <a data-nav href="/" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
         <a data-nav href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
         <a data-nav href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
@@ -53,12 +144,15 @@
       <div class="grid gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
         <div class="max-w-4xl">
           <div class="text-sm uppercase tracking-[0.3em] text-techfix">Knowledge</div>
-          <h1 class="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl">
-            Praktische pc-kennis voor mensen die meer willen dan een standaard build.
+          <h1
+            class="mt-4 text-4xl font-semibold tracking-tight text-white md:text-5xl"
+            style="font-family: 'Space Grotesk', sans-serif;"
+          >
+            PC kennisbank voor custom pc's, gaming performance en tuning.
           </h1>
           <p class="mt-6 max-w-3xl text-lg leading-8 text-zinc-300">
-            In deze knowledge base deelt Techfix heldere uitleg over custom pc's, gaming performance,
-            thermiek, componentkeuzes en workstation builds. Geen opgeblazen marketingverhalen,
+            In deze pc kennisbank deelt Techfix heldere uitleg over custom pc's, gaming performance,
+            thermiek, componentkeuze, tuning en workstation builds. Geen opgeblazen marketingverhalen,
             maar bruikbare informatie waarmee je betere keuzes maakt.
           </p>
           <div class="mt-8 flex flex-col gap-4 sm:flex-row">
