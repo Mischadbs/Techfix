@@ -1,1 +1,202 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Undervolting zonder prestatieverlies | Complete gids | Techfix</title>
+  <meta name="description" content="Wat is undervolting en wanneer heeft het zin? Praktische uitleg over lagere temperaturen, minder geluid en stabiele prestaties zonder onnodig performanceverlies." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://techfix.nl/knowledge/undervolting-zonder-prestatieverlies/" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            techfix: "#58C11D"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+
+<main class="mx-auto max-w-4xl px-6 py-16">
+
+<a href="/knowledge/" class="text-techfix text-sm hover:opacity-80">← Terug naar knowledge</a>
+
+<h1 class="mt-6 text-4xl font-semibold tracking-tight">
+  Undervolting zonder prestatieverlies
+</h1>
+
+<p class="mt-2 text-sm text-zinc-500">
+  Laatst geüpdatet: april 2026
+</p>
+
+<p class="mt-6 text-zinc-300 leading-8">
+  Undervolting klinkt voor veel mensen technisch of risicovol, maar in de praktijk is het vaak
+  een van de slimste manieren om een systeem efficiënter te laten draaien. Minder spanning betekent
+  meestal lagere temperaturen, minder geluid en in veel gevallen stabielere prestaties onder langere belasting.
+</p>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Het doel van undervolting is niet om een systeem “langzamer” te maken. Integendeel:
+  een goed afgestelde undervolt helpt juist om prestaties consistenter vast te houden,
+  vooral bij GPU's en CPU's die anders tegen thermische of power limits aanlopen.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Wat is undervolting?
+</h2>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Undervolting betekent dat je een chip minder spanning geeft dan de standaardinstelling van de fabrikant,
+  terwijl je probeert hetzelfde prestatieniveau vast te houden. In veel gevallen draaien GPU's en CPU's
+  standaard met extra marge om stabiliteit over alle scenario's te garanderen.
+</p>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Daardoor is er vaak ruimte om spanning te verlagen zonder merkbaar performanceverlies.
+  Het resultaat: minder warmte, minder fan noise en efficiënter gedrag onder load.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Waarom heeft undervolting zin?
+</h2>
+
+<ul class="mt-4 space-y-2 text-zinc-300 leading-8">
+  <li>• Lagere temperaturen onder belasting</li>
+  <li>• Minder geluid door lagere fan speeds</li>
+  <li>• Minder power draw</li>
+  <li>• Meer consistente prestaties bij langere sessies</li>
+  <li>• Minder kans op thermische throttling</li>
+</ul>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Vooral in compacte builds of systemen waar stilte belangrijk is, kan undervolting een groot verschil maken.
+  Het is vaak interessanter dan blind overclocken, omdat efficiëntie in de praktijk meer waarde heeft
+  dan een kleine piekwinst op papier.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Verlies je prestaties door undervolting?
+</h2>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Niet per se. Een goede undervolt probeert hetzelfde prestatieniveau te behouden met minder spanning.
+  Zolang je systeem stabiel blijft en de kloksnelheden niet onnodig terugvallen, merk je in de praktijk
+  vaak weinig tot geen prestatieverlies.
+</p>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  In sommige gevallen voelt een undervolted systeem zelfs beter aan, omdat het langer op hogere clocks blijft
+  zonder thermisch in te zakken. Dat is precies waarom tuning verder gaat dan alleen benchmark scores.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  GPU undervolting vs CPU undervolting
+</h2>
+
+<h3 class="mt-8 text-xl font-semibold text-techfix">
+  GPU undervolting
+</h3>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  GPU undervolting is meestal de populairste vorm van tuning. Moderne videokaarten verbruiken veel vermogen
+  en produceren veel warmte. Een kleine verlaging in voltage kan daar al snel merkbaar verschil maken in temperatuur,
+  geluidsniveau en efficiency.
+</p>
+
+<h3 class="mt-10 text-xl font-semibold text-techfix">
+  CPU undervolting
+</h3>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  CPU undervolting kan ook nuttig zijn, vooral in systemen waar de processor warm wordt onder zware workloads.
+  Het effect hangt wel sterker af van het platform, moederbord en de gebruikte workload.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Wanneer is undervolting slim?
+</h2>
+
+<ul class="mt-4 space-y-2 text-zinc-300 leading-8">
+  <li>• Als je systeem warmer of luider is dan nodig</li>
+  <li>• Als je een GPU hebt met veel power headroom</li>
+  <li>• Als je langere gaming- of rendersessies draait</li>
+  <li>• Als je een compact of airflow-beperkt systeem hebt</li>
+  <li>• Als je prestaties stabieler wilt houden onder load</li>
+</ul>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Veelgemaakte fouten bij undervolting
+</h2>
+
+<ul class="mt-4 space-y-2 text-zinc-300 leading-8">
+  <li>• Te agressief undervolten en stabiliteit verliezen</li>
+  <li>• Alleen kijken naar idle gedrag en niet naar echte load</li>
+  <li>• Geen langdurige stabiliteitstest doen</li>
+  <li>• Denken dat iedere chip hetzelfde reageert</li>
+  <li>• Verwachten dat tuning een slechte airflow oplost</li>
+</ul>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Undervolting is geen magische oplossing voor een slecht gebalanceerd systeem.
+  Het werkt het best als onderdeel van een groter geheel: goede componentkeuze, logische airflow,
+  degelijke koeling en realistische performance targets.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Wat levert het in de praktijk op?
+</h2>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  In een goed afgestemd systeem levert undervolting vooral rust op. Niet alleen letterlijk in fan noise,
+  maar ook in hoe voorspelbaar een build zich gedraagt onder belasting. Minder temperatuurpieken,
+  minder onnodig verbruik en een systeem dat meer “onder controle” voelt.
+</p>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Dat is precies waarom Techfix tuning ziet als performance engineering, niet als gimmick.
+  Het gaat niet om één screenshot van een benchmark, maar om hoe een systeem zich echt gedraagt in gebruik.
+</p>
+
+<h2 class="mt-14 text-2xl font-semibold">
+  Conclusie
+</h2>
+
+<p class="mt-4 text-zinc-300 leading-8">
+  Undervolting is een van de meest zinvolle vormen van tuning als je een systeem koeler,
+  stiller en efficiënter wilt maken zonder onnodig prestatieverlies. Mits goed uitgevoerd
+  is het geen trucje, maar een serieuze optimalisatie.
+</p>
+
+<p class="mt-6 text-zinc-400 leading-8">
+  Bij Techfix draait tuning niet om extreme settings, maar om builds die logisch zijn afgestemd
+  op prestaties, thermiek en stabiliteit.
+</p>
+
+<div class="mt-12 rounded-2xl border border-white/10 bg-white/5 p-6">
+  <h3 class="text-xl font-semibold">Wil je een systeem dat echt goed is afgesteld?</h3>
+  <p class="mt-3 text-zinc-300 leading-7">
+    Techfix bouwt en optimaliseert systemen die niet alleen snel zijn op papier,
+    maar aantoonbaar kloppen onder echte belasting.
+  </p>
+  <a href="/custom-build/" class="mt-4 inline-block rounded-xl bg-techfix px-5 py-3 font-semibold text-black">
+    Start jouw build
+  </a>
+  <p class="mt-3 text-xs text-zinc-500">
+    Beperkt aantal builds per maand — focus op kwaliteit en validatie.
+  </p>
+</div>
+
+</main>
+
+</body>
+</html>
