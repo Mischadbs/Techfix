@@ -92,11 +92,13 @@
 
 <body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
 
+  <!-- Background -->
   <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
     <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
     <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
   </div>
 
+  <!-- HEADER -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
       <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
@@ -109,104 +111,128 @@
         <a href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
         <a href="/knowledge/" class="text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
         <a href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
-        <a href="/contact/" class="text-sm text-techfix">Contact</a>
+        <a href="/contact/" class="text-sm text-techfix transition">Contact</a>
       </nav>
 
-      <a href="/custom-build/" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 hover:opacity-90">
+      <a href="/custom-build/" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
         Start jouw build
       </a>
     </div>
   </header>
 
-  <main class="mx-auto max-w-6xl px-5 pt-16 pb-16 sm:pt-20 sm:pb-20 lg:px-6 lg:pt-24 lg:pb-24">
-    <div class="max-w-3xl">
-      <div class="text-sm uppercase tracking-[0.3em] text-techfix">Contact</div>
-      <h1
-        class="mt-4 max-w-[14ch] text-[2.4rem] font-semibold leading-[1.03] tracking-[-0.03em] sm:text-[3rem] lg:text-[3.9rem]"
-        style="font-family: 'Space Grotesk', sans-serif;"
-      >
-        Contact met jouw custom pc specialist.
-      </h1>
+  <main>
+    <section class="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:pb-20 sm:pt-20 lg:px-6 lg:pb-24 lg:pt-24">
+      <div class="max-w-3xl">
+        <div class="text-sm uppercase tracking-[0.3em] text-techfix">Contact</div>
+        <h1
+          class="mt-4 max-w-[14ch] text-[2.4rem] font-semibold leading-[1.03] tracking-[-0.03em] sm:text-[3rem] lg:text-[3.9rem]"
+          style="font-family: 'Space Grotesk', sans-serif;"
+        >
+          Contact met jouw custom pc specialist.
+        </h1>
 
-      <p class="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">
-        Heb je vragen over een high-end custom pc, prestaties, componentkeuze of workstation build?
-        Neem contact op met Techfix voor inhoudelijk advies en een passende buildrichting.
-      </p>
-    </div>
+        <p class="mt-6 max-w-2xl text-base leading-8 text-zinc-300 sm:text-lg">
+          Heb je vragen over een high-end custom pc, prestaties, componentkeuze of workstation build?
+          Neem contact op met Techfix voor inhoudelijk advies en een passende buildrichting.
+        </p>
+      </div>
 
-    <div class="mt-16 grid gap-10 md:grid-cols-2">
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
-        <h2 class="text-xl font-semibold">Contactgegevens</h2>
+      <div class="mt-16 grid gap-10 md:grid-cols-2">
+        <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
+          <h2 class="text-xl font-semibold">Contactgegevens</h2>
 
-        <div class="mt-6 space-y-5 text-zinc-300">
-          <p>
-            <span class="text-sm text-zinc-400">E-mail</span><br>
-            <a href="mailto:info@techfix.nl" class="text-lg text-techfix hover:underline">
-              info@techfix.nl
+          <div class="mt-6 space-y-5 text-zinc-300">
+            <p>
+              <span class="text-sm text-zinc-400">E-mail</span><br>
+              <a href="mailto:info@techfix.nl" class="text-lg text-techfix hover:underline">
+                info@techfix.nl
+              </a>
+            </p>
+
+            <p>
+              <span class="text-sm text-zinc-400">Telefoon</span><br>
+              <a href="tel:+31638875473" class="text-lg text-techfix hover:underline">
+                06 38875473
+              </a>
+            </p>
+
+            <p>
+              <span class="text-sm text-zinc-400">WhatsApp</span><br>
+              <a
+                href="https://wa.me/31638875473"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-lg text-techfix hover:underline"
+              >
+                Stuur direct een WhatsApp
+              </a>
+            </p>
+
+            <p class="text-sm text-zinc-400">
+              Reactietijd meestal binnen 24 uur.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 sm:p-8">
+          <h2 class="text-xl font-semibold">Wanneer neem je contact op?</h2>
+
+          <ul class="mt-6 space-y-3 text-zinc-300">
+            <li>• Advies over hardware keuzes</li>
+            <li>• Performance optimalisatie</li>
+            <li>• AI / workstation builds</li>
+            <li>• Custom build aanvragen</li>
+          </ul>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <a href="/custom-build/"
+               class="inline-block rounded-2xl bg-techfix px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
+              Start jouw build
             </a>
-          </p>
 
-          <p>
-            <span class="text-sm text-zinc-400">Telefoon</span><br>
-            <a href="tel:+31638875473" class="text-lg text-techfix hover:underline">
-              06 38875473
-            </a>
-          </p>
-
-          <p>
-            <span class="text-sm text-zinc-400">WhatsApp</span><br>
             <a
               href="https://wa.me/31638875473"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-lg text-techfix hover:underline"
+              class="inline-block rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-zinc-100 transition hover:border-techfix/50 hover:text-techfix"
             >
-              Stuur direct een WhatsApp
+              WhatsApp direct
             </a>
-          </p>
-
-          <p class="text-sm text-zinc-400">
-            Reactietijd meestal binnen 24 uur.
-          </p>
+          </div>
         </div>
       </div>
-
-      <div class="rounded-3xl border border-white/10 bg-white/5 p-6 sm:p-8">
-        <h2 class="text-xl font-semibold">Wanneer neem je contact op?</h2>
-
-        <ul class="mt-6 space-y-3 text-zinc-300">
-          <li>• Advies over hardware keuzes</li>
-          <li>• Performance optimalisatie</li>
-          <li>• AI / workstation builds</li>
-          <li>• Custom build aanvragen</li>
-        </ul>
-
-        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <a href="/custom-build/"
-             class="inline-block rounded-xl bg-techfix px-6 py-3 font-semibold text-zinc-950 hover:opacity-90">
-            Start jouw build
-          </a>
-
-          <a
-            href="https://wa.me/31638875473"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-block rounded-xl border border-white/10 bg-white/5 px-6 py-3 font-semibold text-zinc-100 hover:border-techfix/50 hover:text-techfix"
-          >
-            WhatsApp direct
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="border-t border-white/10">
     <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 text-sm text-zinc-400 md:flex-row md:items-start md:justify-between lg:px-6">
       <div>
-        <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor custom pc's</div>
-        <div class="mt-3 text-xs leading-6 text-zinc-500">
-          KvK: 57281408<br>
-          BTW: NL155583700B01
+        <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor high-end custom pc's</div>
+
+        <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
+          <div>
+            KvK: 57281408<br />
+            BTW: NL155583700B01
+          </div>
+
+          <div>
+            <div class="mb-1 text-[10px] uppercase tracking-[0.18em] text-zinc-500">Betalen</div>
+            <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💳 iDEAL
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                🏦 Bank
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💵 Contant
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                ₿ Bitcoin
+              </span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -219,6 +245,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    if (window.location.pathname.endsWith('/index.html')) {
+      window.location.replace(window.location.pathname.replace('/index.html', '/'));
+    }
+  </script>
 
   <script src="../assets/app.js"></script>
 </body>
