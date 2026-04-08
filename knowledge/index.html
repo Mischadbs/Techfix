@@ -10,6 +10,19 @@
   <link rel="canonical" href="https://techfix.nl/knowledge/" />
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
 
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="PC Kennisbank | Custom PC, Gaming Performance & Tuning | Techfix" />
+  <meta property="og:description" content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze." />
+  <meta property="og:url" content="https://techfix.nl/knowledge/" />
+  <meta property="og:site_name" content="Techfix" />
+  <meta property="og:image" content="https://techfix.nl/assets/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PC Kennisbank | Custom PC, Gaming Performance & Tuning | Techfix" />
+  <meta name="twitter:description" content="Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze." />
+  <meta name="twitter:image" content="https://techfix.nl/assets/og-image.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -25,80 +38,173 @@
     }
   </script>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Techfix",
+          "url": "https://techfix.nl/",
+          "logo": "https://techfix.nl/assets/logo-light.png"
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Techfix Kennisbank",
+          "url": "https://techfix.nl/knowledge/",
+          "description": "Praktische artikelen over custom pc's, gaming performance, thermiek, tuning, workstation builds en componentkeuze.",
+          "inLanguage": "nl-NL"
+        }
+      ]
+    }
+  </script>
+
   <link rel="stylesheet" href="../assets/styles.css" />
+
+  <style>
+    html, body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
-<body class="min-h-screen bg-zinc-950 text-zinc-100">
+<body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
 
-<!-- HEADER -->
-<header class="border-b border-white/10">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-5">
-    <a href="/">
-      <img src="../assets/logo-light.png" class="h-10" />
-    </a>
-
-    <nav class="hidden md:flex gap-6 text-sm text-zinc-300">
-      <a href="/" class="hover:text-techfix">Home</a>
-      <a href="/performance-lab/" class="hover:text-techfix">Performance Lab</a>
-      <a href="/builds/" class="hover:text-techfix">Builds</a>
-      <a href="/knowledge/" class="text-techfix">Knowledge</a>
-      <a href="/custom-build/" class="hover:text-techfix">Custom Build</a>
-      <a href="/contact/" class="hover:text-techfix">Contact</a>
-    </nav>
-
-    <a href="/custom-build/" class="bg-techfix text-zinc-950 px-4 py-2 rounded-xl text-sm font-semibold">
-      Start build
-    </a>
+  <!-- Background -->
+  <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
+    <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
+    <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
   </div>
-</header>
 
-<main class="mx-auto max-w-6xl px-6 py-20">
+  <!-- HEADER -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
+      <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
+        <img src="../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
+      </a>
 
-<h1 class="text-4xl font-semibold mb-10" style="font-family: 'Space Grotesk'">
-PC kennisbank voor performance en custom builds
-</h1>
+      <nav class="hidden items-center gap-7 md:flex" aria-label="Hoofdnavigatie">
+        <a href="/" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
+        <a href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
+        <a href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
+        <a href="/knowledge/" class="text-sm text-techfix transition">Knowledge</a>
+        <a href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
+        <a href="/contact/" class="text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
+      </nav>
 
-<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <a href="/custom-build/" class="rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
+        Start jouw build
+      </a>
+    </div>
+  </header>
 
-<!-- ARTIKEL 1 -->
-<a href="/knowledge/beste-gpu-1440p-gaming/" class="group block rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-techfix/50 transition">
-  <div class="text-sm text-techfix uppercase tracking-widest">Gaming</div>
-  <h3 class="mt-4 text-2xl font-semibold">Beste GPU voor 1440p gaming</h3>
-  <p class="mt-4 text-zinc-300">
-    Welke GPU heb je echt nodig voor 1440p? Geen marketingpraat,
-    maar een realistische kijk op prestaties, VRAM en thermiek.
-  </p>
-  <div class="mt-6 text-techfix font-semibold text-sm">Lees artikel →</div>
-</a>
+  <main>
+    <section class="mx-auto max-w-6xl px-5 pb-10 pt-16 sm:pt-20 lg:px-6 lg:pt-24">
+      <div class="max-w-4xl">
+        <div class="text-sm uppercase tracking-[0.3em] text-techfix">Knowledge</div>
+        <h1
+          class="mt-4 max-w-[16ch] text-[2.4rem] font-semibold leading-[0.95] tracking-[-0.04em] sm:text-[3rem] lg:text-[3.9rem]"
+          style="font-family: 'Space Grotesk', sans-serif;"
+        >
+          PC kennisbank voor performance en custom builds
+        </h1>
+        <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">
+          Praktische artikelen over gaming performance, thermiek, tuning, componentkeuze en workstation builds.
+          Geen marketingpraat, maar heldere uitleg met focus op echte prestaties.
+        </p>
+      </div>
+    </section>
 
-<!-- ARTIKEL 2 (TUNING - NIEUW) -->
-<a href="/knowledge/overclocking-zonder-instabiliteit/" class="group block rounded-3xl border border-white/10 bg-white/5 p-8 hover:border-techfix/50 transition">
-  <div class="text-sm text-techfix uppercase tracking-widest">Tuning</div>
-  <h3 class="mt-4 text-2xl font-semibold">Overclocking zonder instabiliteit</h3>
-  <p class="mt-4 text-zinc-300">
-    Meer performance uit je hardware zonder crashes of oververhitting.
-    Praktische uitleg over GPU, CPU en thermiek.
-  </p>
-  <div class="mt-6 text-techfix font-semibold text-sm">Lees artikel →</div>
-</a>
+    <section class="mx-auto max-w-6xl px-5 py-10 lg:px-6 lg:pb-24">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-<!-- ARTIKEL 3 -->
-<div class="rounded-3xl border border-white/10 bg-white/5 p-8 opacity-80">
-  <div class="text-sm text-techfix uppercase tracking-widest">Workstation</div>
-  <h3 class="mt-4 text-2xl font-semibold">Beste workstation build</h3>
-  <p class="mt-4 text-zinc-300">Binnenkort beschikbaar</p>
-</div>
+        <!-- ARTIKEL 1 -->
+        <a href="/knowledge/beste-gpu-1440p-gaming/" class="group block rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:border-techfix/50">
+          <div class="text-sm uppercase tracking-[0.25em] text-techfix">Gaming</div>
+          <h2 class="mt-4 text-2xl font-semibold text-white">Beste GPU voor 1440p gaming</h2>
+          <p class="mt-4 leading-8 text-zinc-300">
+            Welke GPU heb je echt nodig voor 1440p? Geen marketingpraat,
+            maar een realistische kijk op prestaties, VRAM en thermiek.
+          </p>
+          <div class="mt-6 text-sm font-semibold text-techfix transition group-hover:translate-x-1">
+            Lees artikel →
+          </div>
+        </a>
 
-</div>
+        <!-- ARTIKEL 2 -->
+        <a href="/knowledge/overclocking-zonder-instabiliteit/" class="group block rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:border-techfix/50">
+          <div class="text-sm uppercase tracking-[0.25em] text-techfix">Tuning</div>
+          <h2 class="mt-4 text-2xl font-semibold text-white">Overclocking zonder instabiliteit</h2>
+          <p class="mt-4 leading-8 text-zinc-300">
+            Meer performance uit je hardware zonder crashes of oververhitting.
+            Praktische uitleg over GPU, CPU en thermiek.
+          </p>
+          <div class="mt-6 text-sm font-semibold text-techfix transition group-hover:translate-x-1">
+            Lees artikel →
+          </div>
+        </a>
 
-</main>
+        <!-- ARTIKEL 3 -->
+        <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 opacity-80">
+          <div class="text-sm uppercase tracking-[0.25em] text-techfix">Workstation</div>
+          <h2 class="mt-4 text-2xl font-semibold text-white">Beste workstation build</h2>
+          <p class="mt-4 leading-8 text-zinc-300">
+            Binnenkort beschikbaar
+          </p>
+        </div>
 
-<!-- FOOTER -->
-<footer class="border-t border-white/10">
-  <div class="mx-auto max-w-6xl px-6 py-8 text-sm text-zinc-400">
-    Techfix — Performance engineering voor custom pc's
-  </div>
-</footer>
+      </div>
+    </section>
+  </main>
 
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-8 text-sm text-zinc-400 md:flex-row md:items-start md:justify-between lg:px-6">
+      <div>
+        <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor high-end custom pc's</div>
+
+        <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
+          <div>
+            KvK: 57281408<br />
+            BTW: NL155583700B01
+          </div>
+
+          <div>
+            <div class="mb-1 text-[10px] uppercase tracking-[0.18em] text-zinc-500">Betalen</div>
+            <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💳 iDEAL
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                🏦 Bank
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💵 Contant
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                ₿ Bitcoin
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-6">
+        <a href="/performance-lab/" class="transition hover:text-techfix">Performance Lab</a>
+        <a href="/builds/" class="transition hover:text-techfix">Builds</a>
+        <a href="/knowledge/" class="transition hover:text-techfix">Knowledge</a>
+        <a href="/custom-build/" class="transition hover:text-techfix">Custom Build</a>
+        <a href="/contact/" class="transition hover:text-techfix">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    if (window.location.pathname.endsWith('/index.html')) {
+      window.location.replace(window.location.pathname.replace('/index.html', '/'));
+    }
+  </script>
+
+  <script src="../assets/app.js"></script>
 </body>
 </html>
