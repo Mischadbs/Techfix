@@ -127,8 +127,10 @@
   <main>
     <!-- HERO -->
     <section class="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:pb-20 sm:pt-20 lg:px-6 lg:pb-24 lg:pt-24">
-      <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start lg:gap-14">
-        <div>
+      <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14">
+
+        <!-- LEFT -->
+        <div class="flex flex-col">
           <h1 class="max-w-[12ch] text-4xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-5xl lg:text-6xl" style="font-family: 'Space Grotesk'">
             High-end custom pc's.
             <span class="text-techfix">Performance engineered.</span>
@@ -140,17 +142,17 @@
           </p>
 
           <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="/custom-build/" class="rounded-xl bg-techfix px-6 py-3 font-semibold text-zinc-950 transition hover:opacity-90">
+            <a href="/custom-build/" class="flex-1 rounded-xl bg-techfix px-6 py-3 text-center font-semibold text-zinc-950 transition hover:opacity-90">
               Start jouw custom build
             </a>
-            <a href="/performance-lab/" class="rounded-xl border border-white/20 px-6 py-3 transition hover:border-techfix hover:text-techfix">
+            <a href="/performance-lab/" class="flex-1 rounded-xl border border-white/20 px-6 py-3 text-center transition hover:border-techfix hover:text-techfix">
               Bekijk het Performance Lab
             </a>
           </div>
 
           <div class="mt-4">
-            <div class="group relative flex w-full max-w-[28rem] items-center justify-center overflow-hidden rounded-full border border-techfix/30 bg-techfix/10 px-4 py-2 text-sm text-techfix">
-              <span class="pointer-events-none absolute inset-0 rounded-full bg-techfix/25 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
+            <div class="group relative flex w-full items-center justify-center overflow-hidden rounded-xl border border-techfix/30 bg-techfix/10 px-4 py-3 text-sm text-techfix">
+              <span class="pointer-events-none absolute inset-0 rounded-xl bg-techfix/25 opacity-0 blur-xl transition-opacity duration-300 group-hover:opacity-100"></span>
               <span class="relative">
                 Beperkt aantal builds per maand
               </span>
@@ -158,15 +160,17 @@
           </div>
         </div>
 
-        <div>
-          <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
+        <!-- RIGHT -->
+        <div class="h-full">
+          <div class="h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5">
             <img
               src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1600&q=80"
               alt="High-end custom gaming pc van Techfix"
-              class="w-full object-cover lg:max-h-[420px]"
+              class="h-full w-full object-cover"
             />
           </div>
         </div>
+
       </div>
     </section>
   </main>
