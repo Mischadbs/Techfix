@@ -5,35 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>High-End Custom Gaming PC's | Performance Engineering | Techfix</title>
-  <meta
-    name="description"
-    content="Techfix ontwerpt high-end custom gaming pc's en high-performance systemen voor gaming, creators en AI workloads. Geoptimaliseerd, getest en gevalideerd voor bewezen prestaties."
-  />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://techfix.nl/" />
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-
-  <meta property="og:locale" content="nl_NL" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="High-End Custom Gaming PC's | Performance Engineering | Techfix" />
-  <meta
-    property="og:description"
-    content="High-end custom gaming pc's en performance engineered systemen voor gaming, creators en AI workloads."
-  />
-  <meta property="og:url" content="https://techfix.nl/" />
-  <meta property="og:site_name" content="Techfix" />
-  <meta property="og:image" content="https://techfix.nl/assets/og-image.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="High-End Custom Gaming PC's | Performance Engineering | Techfix" />
-  <meta
-    name="twitter:description"
-    content="High-end custom gaming pc's en performance engineered systemen voor gaming, creators en AI workloads."
-  />
-  <meta name="twitter:image" content="https://techfix.nl/assets/og-image.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet"
@@ -53,8 +28,6 @@
     }
   </script>
 
-  <link rel="stylesheet" href="assets/styles.css" />
-
   <style>
     html, body {
       overflow-x: hidden;
@@ -62,154 +35,114 @@
   </style>
 </head>
 
-<body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
-
-  <!-- Background -->
-  <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
-    <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
-    <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
-  </div>
+<body class="min-h-screen bg-zinc-950 text-zinc-100">
 
   <!-- HEADER -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
-      <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
-        <img src="assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+
+      <a href="/" class="flex items-center gap-3">
+        <img src="assets/logo-light.png" class="h-10">
       </a>
 
       <!-- Desktop nav -->
-      <nav class="hidden items-center gap-7 md:flex" aria-label="Hoofdnavigatie">
-        <a href="/" class="text-sm text-techfix">Home</a>
-        <a href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
-        <a href="/builds/" class="text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
-        <a href="/knowledge/" class="text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
-        <a href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
-        <a href="/contact/" class="text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
+      <nav class="hidden md:flex gap-7 text-sm">
+        <a href="/" class="text-techfix">Home</a>
+        <a href="/performance-lab/" class="text-zinc-300 hover:text-techfix">Performance Lab</a>
+        <a href="/builds/" class="text-zinc-300 hover:text-techfix">Builds</a>
+        <a href="/knowledge/" class="text-zinc-300 hover:text-techfix">Knowledge</a>
+        <a href="/custom-build/" class="text-zinc-300 hover:text-techfix">Custom Build</a>
+        <a href="/contact/" class="text-zinc-300 hover:text-techfix">Contact</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="/custom-build/" class="hidden rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90 md:inline-flex">
+
+        <a href="/custom-build/" class="hidden md:inline-flex bg-techfix px-4 py-2 rounded-xl text-zinc-950 font-semibold">
           Start jouw build
         </a>
 
-        <!-- Mobile menu button -->
-        <button
-          id="mobile-menu-button"
-          type="button"
-          class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-3 text-zinc-100 transition hover:border-techfix/50 md:hidden"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          aria-label="Open menu"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <!-- Hamburger -->
+        <button id="mobile-menu-button" class="md:hidden p-3 border border-white/10 rounded-xl">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor">
+            <path stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
+
       </div>
     </div>
 
-    <!-- Mobile dropdown -->
-    <div id="mobile-menu" class="hidden border-t border-white/10 bg-zinc-950/95 md:hidden">
-      <nav class="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Mobiele navigatie">
-        <a href="/" class="py-3 text-sm text-techfix transition">Home</a>
-        <a href="/performance-lab/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
-        <a href="/builds/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
-        <a href="/knowledge/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Knowledge</a>
-        <a href="/custom-build/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
-        <a href="/contact/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
-        <a href="/custom-build/" class="mt-3 inline-flex w-fit rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
-          Start jouw build
-        </a>
-      </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden border-t border-white/10">
+      <div class="flex flex-col px-5 py-4 gap-3 text-sm">
+        <a href="/">Home</a>
+        <a href="/performance-lab/">Performance Lab</a>
+        <a href="/builds/">Builds</a>
+        <a href="/knowledge/">Knowledge</a>
+        <a href="/custom-build/">Custom Build</a>
+        <a href="/contact/">Contact</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:pb-20 sm:pt-20 lg:px-6 lg:pb-24 lg:pt-24">
-      <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
-        <div>
-          <div class="mb-5 inline-flex items-center rounded-full border border-techfix/30 bg-techfix/10 px-4 py-2 text-sm text-techfix">
-            Beperkt aantal builds per maand
-          </div>
+  <!-- HERO -->
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-          <h1 class="max-w-[12ch] text-4xl font-semibold leading-[0.95] tracking-[-0.04em] sm:text-5xl lg:text-6xl" style="font-family: 'Space Grotesk'">
-            High-end custom pc's.
-            <span class="text-techfix">Performance engineered.</span>
-          </h1>
+      <!-- LEFT -->
+      <div>
+        <h1 class="text-5xl font-semibold leading-tight">
+          High-end custom pc's.
+          <span class="text-techfix">Performance engineered.</span>
+        </h1>
 
-          <p class="mt-6 max-w-xl text-base leading-8 text-zinc-300 sm:text-lg">
-            Techfix ontwerpt high-performance custom pc's voor gaming, creators en AI workloads.
-            Geoptimaliseerd, getest en gevalideerd voor echte prestaties.
-          </p>
+        <p class="mt-6 text-zinc-300 leading-8">
+          Techfix ontwerpt high-performance custom pc's voor gaming, creators en AI workloads.
+        </p>
 
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
-            <a href="/custom-build/" class="rounded-xl bg-techfix px-6 py-3 font-semibold text-zinc-950 transition hover:opacity-90">
-              Start jouw custom build
-            </a>
-            <a href="/performance-lab/" class="rounded-xl border border-white/20 px-6 py-3 transition hover:border-techfix hover:text-techfix">
-              Bekijk het Performance Lab
-            </a>
-          </div>
-        </div>
+        <div class="mt-8 flex gap-4">
+          <a href="/custom-build/" class="bg-techfix px-6 py-3 rounded-xl text-zinc-950 font-semibold">
+            Start jouw build
+          </a>
 
-        <div class="overflow-hidden rounded-3xl border border-white/10 bg-white/5">
-          <img
-            src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=1600&q=80"
-            alt="High-end custom gaming pc van Techfix"
-            class="h-full w-full object-cover"
-          />
+          <a href="/performance-lab/" class="border border-white/20 px-6 py-3 rounded-xl">
+            Bekijk het lab
+          </a>
         </div>
       </div>
-    </section>
-  </main>
+
+      <!-- RIGHT (IMAGE + BADGE) -->
+      <div class="space-y-4">
+
+        <div class="overflow-hidden rounded-3xl border border-white/10">
+          <img
+            src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- VERPLAATSTE BADGE -->
+        <div class="inline-flex items-center rounded-full border border-techfix/30 bg-techfix/10 px-4 py-2 text-sm text-techfix">
+          Beperkt aantal builds per maand
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400 lg:px-6">
-      <div>
-        <div><span class="text-zinc-200">Techfix</span> — Performance engineering voor high-end custom pc's</div>
-
-        <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
-          <div>
-            KvK: 57281408<br />
-            BTW: NL155583700B01
-          </div>
-
-          <div>
-            <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
-              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
-                💳 iDEAL
-              </span>
-
-              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
-                🏦 Bank
-              </span>
-
-              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
-                💵 Contant
-              </span>
-
-              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
-                ₿ Bitcoin
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="max-w-6xl mx-auto px-5 py-8 text-sm text-zinc-400">
+      Techfix — Performance engineering voor high-end custom pc's
     </div>
   </footer>
 
   <script>
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
 
-    if (mobileMenuButton && mobileMenu) {
-      mobileMenuButton.addEventListener('click', function () {
-        const isOpen = !mobileMenu.classList.contains('hidden');
-        mobileMenu.classList.toggle('hidden');
-        mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
-      });
+    btn.onclick = () => {
+      menu.classList.toggle('hidden');
     }
   </script>
 
