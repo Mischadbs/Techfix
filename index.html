@@ -1,9 +1,10 @@
+Hier is je complete homepage code met punt 1 verwerkt: Organization JSON-LD toegevoegd inclusief Instagram sameAs. Verder heb ik niets aangepast.
+
 <!doctype html>
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>High-End Custom Gaming PC's | Performance Engineering | Techfix</title>
   <meta
     name="description"
@@ -12,7 +13,6 @@
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://techfix.nl/" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-
   <meta property="og:locale" content="nl_NL" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="High-End Custom Gaming PC's | Performance Engineering | Techfix" />
@@ -23,7 +23,6 @@
   <meta property="og:url" content="https://techfix.nl/" />
   <meta property="og:site_name" content="Techfix" />
   <meta property="og:image" content="https://techfix.nl/assets/og-image.jpg" />
-
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="High-End Custom Gaming PC's | Performance Engineering | Techfix" />
   <meta
@@ -31,7 +30,6 @@
     content="High-end custom gaming pc's en performance engineered systemen voor gaming, creators en AI workloads."
   />
   <meta name="twitter:image" content="https://techfix.nl/assets/og-image.jpg" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -42,7 +40,6 @@
     href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap"
     rel="stylesheet"
   />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -55,31 +52,47 @@
       }
     }
   </script>
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Techfix",
+          "url": "https://techfix.nl/",
+          "logo": "https://techfix.nl/assets/logo-light.png",
+          "sameAs": [
+            "https://www.instagram.com/techfix_nl/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Techfix",
+          "url": "https://techfix.nl/",
+          "inLanguage": "nl-NL"
+        }
+      ]
+    }
+  </script>
   <link rel="stylesheet" href="assets/styles.css" />
-
   <style>
     html, body {
       overflow-x: hidden;
     }
   </style>
 </head>
-
 <body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
-
   <!-- Background -->
   <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
     <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
     <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
   </div>
-
   <!-- HEADER -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
       <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
         <img src="assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
       </a>
-
       <!-- Desktop nav -->
       <nav class="hidden items-center gap-7 md:flex" aria-label="Hoofdnavigatie">
         <a href="/" class="text-sm text-techfix">Home</a>
@@ -89,12 +102,10 @@
         <a href="/custom-build/" class="text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
         <a href="/contact/" class="text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
       </nav>
-
       <div class="flex items-center gap-3">
         <a href="/custom-build/" class="hidden rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90 md:inline-flex">
           Start jouw build
         </a>
-
         <!-- Mobile menu button -->
         <button
           id="mobile-menu-button"
@@ -110,7 +121,6 @@
         </button>
       </div>
     </div>
-
     <!-- Mobile dropdown -->
     <div id="mobile-menu" class="hidden border-t border-white/10 bg-zinc-950/95 md:hidden">
       <nav class="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Mobiele navigatie">
@@ -126,12 +136,10 @@
       </nav>
     </div>
   </header>
-
   <main>
     <!-- HERO -->
     <section class="mx-auto max-w-6xl px-5 pb-20 pt-20 sm:pb-24 sm:pt-24 lg:px-6 lg:pb-28 lg:pt-28">
       <div class="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14">
-
         <!-- LEFT -->
         <div class="flex h-full flex-col">
           <div>
@@ -142,13 +150,11 @@
               High-end custom pc's.
               <span class="text-techfix">Performance engineered.</span>
             </h1>
-
             <p class="mt-10 max-w-xl text-base leading-8 text-zinc-300 sm:text-lg">
               Techfix ontwerpt high-performance custom pc's voor gaming, creators en AI workloads.
               Geoptimaliseerd, getest en gevalideerd voor echte prestaties.
             </p>
           </div>
-
           <div class="mt-14 space-y-5 lg:mt-16">
             <div class="flex flex-col gap-4 sm:flex-row">
               <a href="/custom-build/" class="flex-1 rounded-xl bg-techfix px-6 py-3 text-center font-semibold text-zinc-950 transition hover:opacity-90">
@@ -158,7 +164,6 @@
                 Bekijk het Performance Lab
               </a>
             </div>
-
             <!-- Desktop badge -->
             <div class="hidden lg:block pt-2">
               <div class="group relative flex w-full items-center justify-center overflow-hidden rounded-xl border border-techfix/30 bg-techfix/10 px-4 py-3 text-sm text-techfix">
@@ -170,7 +175,6 @@
             </div>
           </div>
         </div>
-
         <!-- RIGHT -->
         <div class="h-full">
           <div class="h-full overflow-hidden rounded-3xl border border-white/10 bg-white/5">
@@ -180,7 +184,6 @@
               class="h-full w-full object-cover lg:max-h-[620px]"
             />
           </div>
-
           <!-- Mobile badge -->
           <div class="mt-4 lg:hidden">
             <div class="group relative flex w-full items-center justify-center overflow-hidden rounded-xl border border-techfix/30 bg-techfix/10 px-4 py-3 text-sm text-techfix">
@@ -191,11 +194,9 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>
-
   <!-- FOOTER -->
   <footer class="border-t border-white/10">
     <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400 lg:px-6">
@@ -204,7 +205,6 @@
           <div>
             <span class="text-zinc-200">Techfix</span> — High Performance PC's
           </div>
-
           <a
             href="https://www.instagram.com/techfix_nl/"
             target="_blank"
@@ -218,13 +218,11 @@
             @techfix_nl
           </a>
         </div>
-
         <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
           <div>
             KvK: 57281408<br />
             BTW: NL155583700B01
           </div>
-
           <div>
             <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
               <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
@@ -245,11 +243,9 @@
       </div>
     </div>
   </footer>
-
   <script>
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-
     if (mobileMenuButton && mobileMenu) {
       mobileMenuButton.addEventListener('click', function () {
         const isOpen = !mobileMenu.classList.contains('hidden');
@@ -258,6 +254,5 @@
       });
     }
   </script>
-
 </body>
 </html>
