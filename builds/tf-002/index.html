@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Build TF-002</title>
+  <meta name="description" content="Proof Build TF-002 met benchmarks, thermals en stabiliteitstests." />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            techfix: "#58C11D"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+
+<div class="pointer-events-none absolute inset-0 overflow-hidden">
+  <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
+  <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
+</div>
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+    <a href="../../index.html" class="flex items-center gap-3">
+      <img src="../../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto" />
+    </a>
+
+    <nav class="hidden items-center gap-8 md:flex">
+      <a href="../../index.html" class="text-sm text-zinc-300 hover:text-techfix">Home</a>
+      <a href="../../performance-lab/index.html" class="text-sm text-zinc-300 hover:text-techfix">Performance Lab</a>
+      <a href="../../builds/index.html" class="text-sm text-techfix">Builds</a>
+      <a href="../../knowledge/index.html" class="text-sm text-zinc-300 hover:text-techfix">Knowledge</a>
+      <a href="../../custom-build/index.html" class="text-sm text-zinc-300 hover:text-techfix">Custom Build</a>
+      <a href="../../contact/index.html" class="text-sm text-zinc-300 hover:text-techfix">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="../../custom-build/index.html" class="hidden md:inline-flex rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950">Start jouw build</a>
+
+      <button id="mobile-menu-button" class="md:hidden p-3 border border-white/10 rounded-2xl">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-white/10 bg-zinc-950/95 md:hidden">
+    <nav class="flex flex-col px-6 py-4">
+      <a href="../../index.html" class="py-2">Home</a>
+      <a href="../../performance-lab/index.html" class="py-2">Performance Lab</a>
+      <a href="../../builds/index.html" class="py-2 text-techfix">Builds</a>
+      <a href="../../knowledge/index.html" class="py-2">Knowledge</a>
+      <a href="../../custom-build/index.html" class="py-2">Custom Build</a>
+      <a href="../../contact/index.html" class="py-2">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="mx-auto max-w-7xl px-6 pt-20 pb-10">
+  <div class="max-w-4xl">
+    <div class="text-sm uppercase tracking-[0.3em] text-techfix">Proof Build</div>
+    <h1 class="mt-4 text-4xl md:text-5xl font-semibold">Techfix Build TF-002</h1>
+    <p class="mt-6 text-zinc-300">
+      Deze build focust op high refresh rate gaming en maximale efficiëntie.
+    </p>
+  </div>
+</section>
+
+<section class="mx-auto max-w-7xl px-6 py-10">
+  <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+
+    <div class="space-y-8">
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Use case</h2>
+        <p class="mt-3 text-zinc-300">1440p high FPS gaming (240Hz) met focus op latency en consistentie.</p>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Hardware configuratie</h2>
+        <ul class="mt-4 text-zinc-300 space-y-2">
+          <li>CPU: Ryzen 7 7800X3D</li>
+          <li>GPU: RTX 4080 Super</li>
+          <li>RAM: 32GB DDR5</li>
+          <li>Storage: 1TB NVMe Gen4</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Benchmark resultaten</h2>
+        <div class="mt-4 text-zinc-300 space-y-2">
+          <div class="flex justify-between"><span>3DMark Time Spy</span><span class="text-techfix">28500</span></div>
+          <div class="flex justify-between"><span>Warzone FPS</span><span class="text-techfix">220 avg</span></div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Thermiek</h2>
+        <div class="mt-4 text-zinc-300 space-y-2">
+          <div class="flex justify-between"><span>CPU</span><span class="text-techfix">72°C</span></div>
+          <div class="flex justify-between"><span>GPU</span><span class="text-techfix">64°C</span></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="space-y-6">
+      <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5" class="rounded-2xl" />
+      <div class="rounded-2xl bg-techfix/10 p-6">
+        <h2 class="text-xl font-semibold">Resultaat</h2>
+        <p class="mt-3 text-zinc-200">Optimale balans tussen performance, thermiek en noise.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/10">
+  <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400">
+    <span class="text-zinc-200">Techfix</span> — High Performance PC's
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('mobile-menu-button');
+const menu = document.getElementById('mobile-menu');
+btn.onclick = () => menu.classList.toggle('hidden');
+</script>
+
+</body>
+</html>
