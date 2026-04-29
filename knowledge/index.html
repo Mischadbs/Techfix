@@ -88,17 +88,20 @@
 
 <body class="min-h-screen overflow-x-hidden bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
 
+  <!-- Background -->
   <div class="pointer-events-none absolute inset-0 max-w-full overflow-hidden">
     <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
     <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
   </div>
 
+  <!-- HEADER -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
       <a href="/" class="flex items-center gap-3" aria-label="Techfix home">
         <img src="../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
       </a>
 
+      <!-- Desktop nav -->
       <nav class="hidden items-center gap-7 md:flex" aria-label="Hoofdnavigatie">
         <a href="/" class="text-sm text-zinc-300 transition hover:text-techfix">Home</a>
         <a href="/performance-lab/" class="text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
@@ -113,26 +116,46 @@
           Start jouw build
         </a>
 
-        <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-3 text-zinc-100 md:hidden">
+        <!-- Mobile menu button -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 p-3 text-zinc-100 transition hover:border-techfix/50 md:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Open menu"
+        >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
     </div>
+
+    <!-- Mobile dropdown -->
+    <div id="mobile-menu" class="hidden border-t border-white/10 bg-zinc-950/95 md:hidden">
+      <nav class="mx-auto flex max-w-6xl flex-col px-5 py-4" aria-label="Mobiele navigatie">
+        <a href="/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Home</a>
+        <a href="/performance-lab/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Performance Lab</a>
+        <a href="/builds/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Builds</a>
+        <a href="/knowledge/" class="py-3 text-sm text-techfix transition">Knowledge</a>
+        <a href="/custom-build/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Custom Build</a>
+        <a href="/contact/" class="py-3 text-sm text-zinc-300 transition hover:text-techfix">Contact</a>
+        <a href="/custom-build/" class="mt-3 inline-flex w-fit rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:opacity-90">
+          Start jouw build
+        </a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="mx-auto max-w-6xl px-5 pt-6 text-sm text-zinc-400">
-      <a href="/" class="hover:text-techfix">Home</a>
-      <span class="mx-2">/</span>
-      <span class="text-zinc-200">Knowledge</span>
-    </div>
-
-    <section class="mx-auto max-w-6xl px-5 pb-10 pt-10 sm:pt-16 lg:px-6 lg:pt-20">
+    <section class="mx-auto max-w-6xl px-5 pb-10 pt-16 sm:pt-20 lg:px-6 lg:pt-24">
       <div class="max-w-4xl">
         <div class="text-sm uppercase tracking-[0.3em] text-techfix">Knowledge</div>
-        <h1 class="mt-4 max-w-[16ch] text-[2.4rem] font-bold leading-[0.92] tracking-[-0.03em] sm:text-[3rem] lg:text-[3.9rem]" style="font-family: 'Satoshi', sans-serif;">
+        <h1
+          class="mt-4 max-w-[16ch] text-[2.4rem] font-bold leading-[0.92] tracking-[-0.03em] sm:text-[3rem] lg:text-[3.9rem]"
+          style="font-family: 'Satoshi', sans-serif;"
+        >
           PC kennisbank voor performance en custom builds
         </h1>
         <p class="mt-6 max-w-3xl text-base leading-8 text-zinc-300 sm:text-lg">
@@ -145,6 +168,7 @@
     <section class="mx-auto max-w-6xl px-5 py-10 lg:px-6 lg:pb-24">
       <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
+        <!-- ARTIKEL 1 -->
         <a href="/knowledge/beste-gpu-1440p-gaming/" class="group block rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:border-techfix/50">
           <div class="text-sm uppercase tracking-[0.25em] text-techfix">Gaming</div>
           <h2 class="mt-4 text-2xl font-semibold text-white">Beste GPU voor 1440p gaming</h2>
@@ -152,9 +176,12 @@
             Welke GPU heb je echt nodig voor 1440p? Geen marketingpraat,
             maar een realistische kijk op prestaties, VRAM en thermiek.
           </p>
-          <div class="mt-6 text-sm font-semibold text-techfix">Lees artikel →</div>
+          <div class="mt-6 text-sm font-semibold text-techfix transition group-hover:translate-x-1">
+            Lees artikel →
+          </div>
         </a>
 
+        <!-- ARTIKEL 2 -->
         <a href="/knowledge/overclocking-zonder-instabiliteit/" class="group block rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:border-techfix/50">
           <div class="text-sm uppercase tracking-[0.25em] text-techfix">Tuning</div>
           <h2 class="mt-4 text-2xl font-semibold text-white">Overclocking zonder instabiliteit</h2>
@@ -162,24 +189,91 @@
             Meer performance uit je hardware zonder crashes of oververhitting.
             Praktische uitleg over GPU, CPU en thermiek.
           </p>
-          <div class="mt-6 text-sm font-semibold text-techfix">Lees artikel →</div>
+          <div class="mt-6 text-sm font-semibold text-techfix transition group-hover:translate-x-1">
+            Lees artikel →
+          </div>
         </a>
 
+        <!-- ARTIKEL 3 -->
         <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 opacity-80">
           <div class="text-sm uppercase tracking-[0.25em] text-techfix">Workstation</div>
           <h2 class="mt-4 text-2xl font-semibold text-white">Beste workstation build</h2>
-          <p class="mt-4 leading-8 text-zinc-300">Binnenkort beschikbaar</p>
+          <p class="mt-4 leading-8 text-zinc-300">
+            Binnenkort beschikbaar
+          </p>
         </div>
 
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="border-t border-white/10">
     <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400 lg:px-6">
-      <span class="text-zinc-200">Techfix</span> — High Performance PC's
+      <div>
+        <div>
+          <div>
+            <span class="text-zinc-200">Techfix</span> — High Performance PC's
+          </div>
+
+          <a
+            href="https://www.instagram.com/techfix_nl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Volg Techfix op Instagram"
+            class="mt-2 inline-flex items-center gap-2 text-zinc-300 transition hover:text-techfix"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-2.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+            </svg>
+            @techfix_nl
+          </a>
+        </div>
+
+        <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
+          <div>
+            KvK: 57281408<br />
+            BTW: NL155583700B01
+          </div>
+
+          <div>
+            <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💳 iDEAL
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                🏦 Bank
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                💵 Contant
+              </span>
+              <span class="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 px-2 py-1">
+                ₿ Bitcoin
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function () {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuButton.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
+
+    if (window.location.pathname.endsWith('/index.html')) {
+      window.location.replace(window.location.pathname.replace('/index.html', '/'));
+    }
+  </script>
+
+  <script src="../assets/app.js"></script>
 </body>
 </html>
