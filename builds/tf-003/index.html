@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techfix | Build TF-003</title>
+  <meta name="description" content="Proof Build TF-003 AI workstation met benchmarks, thermals en stabiliteitstests." />
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@500,700,900&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            techfix: "#58C11D"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="../../assets/styles.css" />
+</head>
+
+<body class="min-h-screen bg-zinc-950 text-zinc-100 selection:bg-techfix/30 selection:text-white">
+
+<div class="pointer-events-none absolute inset-0 overflow-hidden">
+  <div class="absolute -top-24 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-techfix/15 blur-3xl"></div>
+  <div class="absolute right-0 top-[32rem] h-80 w-80 rounded-full bg-techfix/10 blur-3xl"></div>
+</div>
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/80 backdrop-blur-xl">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 lg:px-6 lg:py-5">
+    <a href="/" class="flex items-center gap-3">
+      <img src="../../assets/logo-light.png" alt="Techfix logo" class="h-9 w-auto md:h-14 lg:h-16" />
+    </a>
+
+    <nav class="hidden items-center gap-7 md:flex">
+      <a href="/" class="text-sm text-zinc-300 hover:text-techfix">Home</a>
+      <a href="/performance-lab/" class="text-sm text-zinc-300 hover:text-techfix">Performance Lab</a>
+      <a href="/builds/" class="text-sm text-techfix">Builds</a>
+      <a href="/knowledge/" class="text-sm text-zinc-300 hover:text-techfix">Knowledge</a>
+      <a href="/custom-build/" class="text-sm text-zinc-300 hover:text-techfix">Custom Build</a>
+      <a href="/contact/" class="text-sm text-zinc-300 hover:text-techfix">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="/custom-build/" class="hidden md:inline-flex rounded-2xl bg-techfix px-4 py-2 text-sm font-semibold text-zinc-950">
+        Start jouw build
+      </a>
+
+      <button id="mobile-menu-button" class="md:hidden p-3 border border-white/10 rounded-2xl">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden border-t border-white/10 bg-zinc-950/95 md:hidden">
+    <nav class="flex flex-col px-6 py-4 text-zinc-300">
+      <a href="/" class="py-2 hover:text-techfix">Home</a>
+      <a href="/performance-lab/" class="py-2 hover:text-techfix">Performance Lab</a>
+      <a href="/builds/" class="py-2 text-techfix">Builds</a>
+      <a href="/knowledge/" class="py-2 hover:text-techfix">Knowledge</a>
+      <a href="/custom-build/" class="py-2 hover:text-techfix">Custom Build</a>
+      <a href="/contact/" class="py-2 hover:text-techfix">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="mx-auto max-w-6xl px-5 pt-20 pb-10">
+  <div class="max-w-4xl">
+
+    <a href="/builds/" class="text-sm text-zinc-400 transition hover:text-techfix">
+      ← Terug naar builds
+    </a>
+
+    <div class="mt-6 text-sm uppercase tracking-[0.3em] text-techfix">Proof Build</div>
+    <h1 class="mt-4 text-4xl md:text-5xl font-semibold">Techfix Build TF-003</h1>
+    <p class="mt-6 text-zinc-300">
+      Deze build is ontworpen als krachtige AI / compute workstation voor lokale AI-modellen, rendering, zware multitasking en professionele creator workloads.
+    </p>
+  </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-5 py-10">
+  <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+
+    <div class="space-y-8">
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Use case</h2>
+        <p class="mt-3 leading-7 text-zinc-300">
+          Lokale AI inference, model testing, 3D rendering, video editing en zware multitasking. De focus ligt op GPU-compute, VRAM, stabiliteit en langdurige performance onder sustained load.
+        </p>
+      </div>
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Hardware configuratie</h2>
+        <ul class="mt-4 space-y-2 text-zinc-300">
+          <li>CPU: Ryzen 9 7950X</li>
+          <li>GPU: NVIDIA RTX 4090 24GB</li>
+          <li>RAM: 128GB DDR5</li>
+          <li>Storage: 4TB NVMe Gen4</li>
+          <li>Cooling: High-airflow workstation setup</li>
+        </ul>
+      </div>
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Benchmark resultaten</h2>
+        <div class="mt-4 space-y-3 text-zinc-300">
+          <div class="flex justify-between gap-4"><span>Cinebench R23 Multi</span><span class="text-techfix">38200</span></div>
+          <div class="flex justify-between gap-4"><span>Blender Benchmark</span><span class="text-techfix">27 sec</span></div>
+          <div class="flex justify-between gap-4"><span>3DMark Time Spy</span><span class="text-techfix">35400</span></div>
+          <div class="flex justify-between gap-4"><span>Stable Diffusion 1024px</span><span class="text-techfix">± 7 sec</span></div>
+        </div>
+      </div>
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Thermische analyse</h2>
+        <div class="mt-4 space-y-3 text-zinc-300">
+          <div class="flex justify-between gap-4"><span>GPU max compute load</span><span class="text-techfix">68°C</span></div>
+          <div class="flex justify-between gap-4"><span>CPU max render load</span><span class="text-techfix">80°C</span></div>
+          <div class="flex justify-between gap-4"><span>Noise level</span><span class="text-techfix">36 dB</span></div>
+        </div>
+      </div>
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold">Stability test</h2>
+        <p class="mt-3 text-zinc-300">
+          OCCT CPU test + GPU compute load + Blender render loop gedurende <span class="text-techfix">18 uur stabiel</span>.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="space-y-6">
+      <div class="overflow-hidden rounded-[2rem] border border-white/10">
+        <img
+          src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
+          alt="Techfix proof build TF-003"
+          class="h-full w-full object-cover"
+        />
+      </div>
+
+      <div class="rounded-[2rem] border border-techfix/20 bg-techfix/10 p-8">
+        <h2 class="text-xl font-semibold text-white">Optimalisaties</h2>
+        <ul class="mt-4 space-y-2 text-zinc-200">
+          <li>GPU power limit tuning voor efficiency</li>
+          <li>CPU undervolt voor lagere thermiek</li>
+          <li>Memory stability tuning</li>
+          <li>Airflow optimalisatie voor sustained compute load</li>
+        </ul>
+      </div>
+
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8">
+        <h2 class="text-xl font-semibold text-white">Resultaat</h2>
+        <div class="mt-4 space-y-2 text-zinc-300">
+          <div class="flex justify-between gap-4"><span>Compute efficiency winst</span><span class="text-techfix">+9%</span></div>
+          <div class="flex justify-between gap-4"><span>Lagere GPU temperatuur</span><span class="text-techfix">-7°C</span></div>
+          <div class="flex justify-between gap-4"><span>Geluid reductie</span><span class="text-techfix">-6 dB</span></div>
+        </div>
+      </div>
+
+      <a href="/custom-build/" class="block rounded-2xl bg-techfix px-6 py-4 text-center text-sm font-semibold text-zinc-950">
+        Vraag een vergelijkbare build aan
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="border-t border-white/10">
+  <div class="mx-auto max-w-6xl px-5 py-8 text-sm text-zinc-400 lg:px-6">
+    <div>
+      <div>
+        <div>
+          <span class="text-zinc-200">Techfix</span> — High Performance PC's
+        </div>
+
+        <a href="https://www.instagram.com/techfix_nl/" target="_blank" class="mt-2 inline-flex items-center gap-2 text-zinc-300 hover:text-techfix">
+          @techfix_nl
+        </a>
+      </div>
+
+      <div class="mt-4 flex flex-col gap-4 text-xs text-zinc-500 md:flex-row md:items-center md:gap-8">
+        <div>
+          KvK: 57281408<br />
+          BTW: NL155583700B01
+        </div>
+
+        <div class="flex flex-wrap gap-2 text-[11px] text-zinc-300">
+          <span class="px-2 py-1 border border-white/10 rounded-full">💳 iDEAL</span>
+          <span class="px-2 py-1 border border-white/10 rounded-full">🏦 Bank</span>
+          <span class="px-2 py-1 border border-white/10 rounded-full">💵 Contant</span>
+          <span class="px-2 py-1 border border-white/10 rounded-full">₿ Bitcoin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const btn = document.getElementById('mobile-menu-button');
+const menu = document.getElementById('mobile-menu');
+btn.onclick = () => menu.classList.toggle('hidden');
+</script>
+
+</body>
+</html>
